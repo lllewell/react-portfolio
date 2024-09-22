@@ -16,10 +16,10 @@ function Contact() {
   };
 
   const handleMessageInputChange = (e) => {
-    
-    const { message, content } = e.target;
 
-    return message === 'message' ? setMessage(content) : setMessage('');
+    const { message, value } = e.target;
+
+    return message === 'message' ? setMessage(value) : setMessage('');
   };
 
   const handleFormSubmit = (e) => {
@@ -52,6 +52,12 @@ function Contact() {
           type="text"
           placeholder="Last Name"
         />
+        <textarea
+          value={message}
+          name="message"
+          id="message"
+          onChange={handleMessageInputChange}
+        ></textarea>
         <button type="submit">
           Submit
         </button>
