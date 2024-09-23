@@ -51,12 +51,14 @@ function Contact() {
           type="text"
           placeholder="Last Name"
         />
+        <label htmlFor='message'>
         <textarea
           value={message}
           name="message"
           id="message"
           onChange={handleMessageInputChange}
         ></textarea>
+        </label>
         <button type="submit">
           Submit
         </button>
