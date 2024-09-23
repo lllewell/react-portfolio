@@ -3,3 +3,7 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+#readme-generator {
+    padding-top: 16px;
+}

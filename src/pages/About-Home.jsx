@@ -1,7 +1,10 @@
+import headshot from '../images/headshot.png'
+
 export default function Home() {
   return (
     <div>
       <h1>About Me</h1>
+      <img style={{width: '30%'}} src={headshot} alt="headshot-photo" />
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
         velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
