@@ -4,7 +4,7 @@ export default function Portfolio() {
   return (
     <div>
       <h1>Portfolio Page</h1>
-      <img src={employeeTracker} alt="employee-tracker" />
+      <img style={{width: '35%'}} src={employeeTracker} alt="employee-tracker"/>
       <p>
         Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
         Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu

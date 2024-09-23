@@ -57,7 +57,7 @@ function Contact() {
           name="message"
           id="message"
           onChange={handleMessageInputChange}
-        ></textarea>
+        />
         </label>
         <button type="submit">
           Submit
