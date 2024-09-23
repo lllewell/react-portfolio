@@ -56,6 +56,7 @@ function Contact() {
           value={message}
           name="message"
           id="message"
+          cols="40" rows="5"
           onChange={handleMessageInputChange}
         ></textarea>
         </label>
