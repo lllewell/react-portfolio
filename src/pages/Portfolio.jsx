@@ -5,7 +5,7 @@ import svgGenerator from '../images/svg.png'
 import ecommerceDB from '../images/ecommerce.png'
 import cliREADMEGenerator from '../images/cli-readme-generator.png'
 import { Link } from 'react-router-dom'
-import '../Porfolio.css'
+import '../assets/css/Porfolio.css'
 
 export default function Portfolio() {
   return (
