@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import '../assets/css/Contact-form.css'
 
 function Contact() {
   // Here we set two state variables for firstName and lastName using `useState`
@@ -26,7 +27,7 @@ function Contact() {
     e.preventDefault();
 
     // Alert the user their first and last name, clear the inputs
-    alert(`Hello ${firstName} ${lastName}`);
+    alert(`Hello ${firstName} ${lastName} your message has been received`);
     setFirstName('');
     setLastName('');
     setMessage('');
@@ -34,43 +35,45 @@ function Contact() {
 
   return (
     <div className="container text-center">
-      <h1>
-        Hello {firstName} {lastName}
-      </h1>
-      <form className="form" onSubmit={handleFormSubmit}>
-        <input
-          value={firstName}
-          name="firstName"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="First Name"
-        />
-        <input
-          value={lastName}
-          name="lastName"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Last Name"
-        />
-        <input
-          value={message}
-          name="message"
-          onChange={handleMessageInputChange}
-          type="text"
-          placeholder="Message"
-        />
-        {/* <label htmlFor='message'>
+        <h1>
+          Please complete form
+        </h1>
+      <div className='form'>
+        <form className="form" onSubmit={handleFormSubmit}>
+          <input
+            value={firstName}
+            name="firstName"
+            onChange={handleInputChange}
+            type="text"
+            placeholder="First Name"
+          />
+          <input
+            value={lastName}
+            name="lastName"
+            onChange={handleInputChange}
+            type="text"
+            placeholder="Last Name"
+          />
+          <input
+            value={message}
+            name="message"
+            onChange={handleMessageInputChange}
+            type="text"
+            placeholder="Message"
+          />
+          {/* <label htmlFor='message'>
         <textarea
-          value={message}
-          name="message"
-          id="message"
-          onChange={handleMessageInputChange}
+        value={message}
+        name="message"
+        id="message"
+        onChange={handleMessageInputChange}
         />
         </label> */}
-        <button type="submit">
-          Submit
-        </button>
-      </form>
+          <button type="submit">
+            Submit
+          </button>
+        </form>
+      </div>
     </div>
   );
 }

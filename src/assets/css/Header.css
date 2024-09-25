@@ -1,0 +1,19 @@
+.header {
+    background-color: lightcoral;
+}
+
+.nav-tabs {
+    background-color: bisque;
+}
+
+.body {
+    font-size: large;
+    font-style: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
