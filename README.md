@@ -15,3 +15,9 @@ Provide instructions and examples for use. Include screenshots as needed.
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
 
 ![portfolio screenshot](./src/images/react-portfolio.png)
+
+## Links
+
+[GitHub](https://github.com/lllewell/react-portfolio)
+
+[Netlify deployed](https://tangerine-crisp-76e25d.netlify.app)
